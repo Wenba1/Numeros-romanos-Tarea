@@ -13,6 +13,12 @@ function convertidor(num) {
         return "VI";
     }else if(num===7){
         return "VII";
+    }else if(num===8){
+        return "VIII";
+    }else if(num===9){
+        return "IX";
+    }else if(num===10){
+        return "X";
     }
   }
   

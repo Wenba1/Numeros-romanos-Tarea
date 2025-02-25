@@ -28,4 +28,16 @@ describe("Convertidor", () => {
   it("deberia convertir numero a 7 a romano", () => {
     expect(convertidor(7)).toEqual("VII");
   });
+
+  it("deberia convertir numero a 8 a romano", () => {
+    expect(convertidor(8)).toEqual("VIII");
+  });
+
+  it("deberia convertir numero a 9 a romano", () => {
+    expect(convertidor(9)).toEqual("IX");
+  });
+
+  it("deberia convertir numero a 10 a romano", () => {
+    expect(convertidor(10)).toEqual("X");
+  });
 });
