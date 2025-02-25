@@ -4,7 +4,9 @@ function convertidor(num) {
     }else if(num===2){
         return "II";
     }else if(num===3){
-        return "III";
+        return "III"
+    }else if(num===4){
+        return "VI";
     }
   }
   
