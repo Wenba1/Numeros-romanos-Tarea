@@ -8,4 +8,8 @@ describe("Convertidor", () => {
   it("deberia convertir numero a 2 a romano", () => {
     expect(convertidor(2)).toEqual("II");
   });
+
+  it("deberia convertir numero a 3 a romano", () => {
+    expect(convertidor(3)).toEqual("III");
+  });
 });

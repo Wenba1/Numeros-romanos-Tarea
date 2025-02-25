@@ -3,6 +3,8 @@ function convertidor(num) {
         return "I";
     }else if(num===2){
         return "II";
+    }else if(num===3){
+        return "III";
     }
   }
   
