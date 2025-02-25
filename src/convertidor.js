@@ -11,6 +11,8 @@ function convertidor(num) {
         return "V";
     }else if(num===6){
         return "VI";
+    }else if(num===7){
+        return "VII";
     }
   }
   
