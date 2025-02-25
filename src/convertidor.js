@@ -6,6 +6,10 @@ function convertidor(num) {
     }else if(num===3){
         return "III"
     }else if(num===4){
+        return "IV";
+    }else if(num===5){
+        return "V";
+    }else if(num===6){
         return "VI";
     }
   }

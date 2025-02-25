@@ -16,4 +16,12 @@ describe("Convertidor", () => {
   it("deberia convertir numero a 4 a romano", () => {
     expect(convertidor(4)).toEqual("IV");
   });
+
+  it("deberia convertir numero a 5 a romano", () => {
+    expect(convertidor(5)).toEqual("V");
+  });
+
+  it("deberia convertir numero a 6 a romano", () => {
+    expect(convertidor(6)).toEqual("VI");
+  });
 });
