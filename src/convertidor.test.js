@@ -40,4 +40,28 @@ describe("Convertidor", () => {
   it("deberia convertir numero a 10 a romano", () => {
     expect(convertidor(10)).toEqual("X");
   });
+
+  it("deberia convertir numero a 40 a romano", () => {
+    expect(convertidor(40)).toEqual("XL");
+  });
+
+  it("deberia convertir numero a 50 a romano", () => {
+    expect(convertidor(50)).toEqual("L");
+  });
+
+  it("deberia convertir numero a 90 a romano", () => {
+    expect(convertidor(90)).toEqual("XC");
+  });
+
+  it("deberia convertir numero a 100 a romano", () => {
+    expect(convertidor(100)).toEqual("C");
+  });
+
+  it("deberia convertir numero a 400 a romano", () => {
+    expect(convertidor(400)).toEqual("CD");
+  });
+
+  it("deberia convertir numero a 500 a romano", () => {
+    expect(convertidor(500)).toEqual("D");
+  });
 });

@@ -1,26 +1,34 @@
-function convertidor(num) {
-    if(num===1){
-        return "I";
-    }else if(num===2){
-        return "II";
-    }else if(num===3){
-        return "III"
-    }else if(num===4){
-        return "IV";
-    }else if(num===5){
-        return "V";
-    }else if(num===6){
-        return "VI";
-    }else if(num===7){
-        return "VII";
-    }else if(num===8){
-        return "VIII";
-    }else if(num===9){
-        return "IX";
-    }else if(num===10){
-        return "X";
+function convertidor(numero) {
+    if (numero < 1 || numero > 500) {
+        return "Número fuera de rango";
     }
-  }
+
+    const valores = [
+        { valor: 500, simbolo: "D" },
+        { valor: 400, simbolo: "CD" },
+        { valor: 100, simbolo: "C" },
+        { valor: 90, simbolo: "XC" },
+        { valor: 50, simbolo: "L" },
+        { valor: 40, simbolo: "XL" },
+        { valor: 10, simbolo: "X" },
+        { valor: 9, simbolo: "IX" },
+        { valor: 5, simbolo: "V" },
+        { valor: 4, simbolo: "IV" },
+        { valor: 1, simbolo: "I" },
+    ];
+
+    let resultado = "";
+
+    for (const { valor, simbolo } of valores) {
+        while (numero >= valor) {
+            resultado += simbolo;
+            numero -= valor;
+        }
+    }
+
+    return resultado;
+}
+
   
   export default convertidor;
   
